@@ -33,7 +33,7 @@ class TestMethodDescriptors:
             descriptor_type: Type[MethodDescriptorBase],
             expected_names: List[str]
     ):
-        method_dict = descriptor_type.get_instance_methods(self.fake_marked_instance)
+        method_dict = descriptor_type.get_marked_method(self.fake_marked_instance)
 
         assert len(expected_names) == len(method_dict)
         for name in expected_names:

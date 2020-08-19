@@ -18,7 +18,7 @@ class MethodDescriptorBase(ABC):
         pass
 
     @classmethod
-    def get_instance_methods(cls, instance):
+    def get_marked_method(cls, instance):
         """
         Get all marked methods of an instance with this descriptor.
         :param instance:

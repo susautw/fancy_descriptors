@@ -7,6 +7,8 @@ from fancy_descriptors.method_descriptor_base import MethodDescriptorBase
 class SimpleMethodDescriptor(MethodDescriptorBase):
     """
     This class provide a simplest implementation of MethodDescriptorBase
+    Any class should not mark methods as this descriptor, except in testing.
+    See MethodDescriptor
     """
 
     def __init__(self, method: Callable):
