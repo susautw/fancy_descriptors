@@ -1,2 +1,5 @@
-[see readme here](./fancy_descriptors/README.md)
-[see licence here](./fancy_descriptors/LICENSE.txt)
+# Fancy Descriptors
+
+[see README here](./fancy_descriptors/README.md)
+
+[see LICENSE here](./fancy_descriptors/LICENSE.txt)
