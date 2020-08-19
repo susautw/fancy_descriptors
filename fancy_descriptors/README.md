@@ -1,7 +1,7 @@
 # fancy-descriptors
 This package add a callable descriptor called method descriptor which can apply on methods.
 
-#Usage
+# Usage
 ### a simplest example:
 ```python
 import fancy_descriptors as fd
