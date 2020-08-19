@@ -14,6 +14,9 @@ clean:
 upload_test: clean all
 	twine upload --repository testpypi dist/*
 
+upload: clean all
+	twine upload dist/*
+
 test: chdir
 	pwd
 	echo $PATH
