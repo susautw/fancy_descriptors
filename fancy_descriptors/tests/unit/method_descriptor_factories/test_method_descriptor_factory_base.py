@@ -1,4 +1,4 @@
-from tests.unit.method_descriptor_factories.fake_method_descriptor_factory import FakeMethodDescriptorFactory
+from fancy_descriptors.tests.unit.method_descriptor_factories.fake_method_descriptor_factory import FakeMethodDescriptorFactory
 
 
 class TestMethodDescriptorFactoryBase:

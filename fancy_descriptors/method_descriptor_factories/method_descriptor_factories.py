@@ -8,3 +8,6 @@ class SimpleMethodDescriptorFactory(MethodDescriptorFactoryBase):
     def create(self, method: Callable) -> MethodDescriptorBase:
         return SimpleMethodDescriptor(method)
 
+
+class MethodDescriptorFactories:
+    simple = SimpleMethodDescriptorFactory()

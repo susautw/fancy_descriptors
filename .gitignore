@@ -1,1 +1,4 @@
 .idea
+build
+dist
+fancy_descriptor.egg-info
