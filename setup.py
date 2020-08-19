@@ -2,11 +2,11 @@ from setuptools import setup, find_packages
 
 setup(
     name="fancy-descriptor",
-    version="0.1.0.alpha2",
+    version="0.1.0.alpha3",
     packages=find_packages(),
     package_data={
         # If any package contains *.txt or *.rst files, include them:
-        "": ["*.md"],
+        "": ["*.md", "*.txt"],
     },
 
     # metadata to display on PyPI
