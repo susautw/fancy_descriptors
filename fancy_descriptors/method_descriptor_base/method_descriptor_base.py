@@ -1,5 +1,6 @@
 import inspect
 from abc import ABC, abstractmethod
+from typing import Callable
 
 
 class MethodDescriptorBase(ABC):
@@ -23,6 +24,12 @@ class MethodDescriptorBase(ABC):
         :param instance:
         :return: methods
         """
-        return [
-            (method_name, method) for method_name, method in inspect.getmembers(instance) if isinstance(method, cls)
-        ]
+        return {
+            method_name: method for method_name, method in inspect.getmembers(instance) if isinstance(method, cls)
+        }
+
+    @classmethod
+    def bind(cls, *args, **kwargs):
+        def inner(method: Callable):
+            return cls(method, *args, **kwargs)
+        return inner

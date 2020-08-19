@@ -1,10 +1,10 @@
 from copy import copy
 from typing import Callable
 
-from method_descriptors import MethodDescriptorBase
+from fancy_descriptors.method_descriptor_base import MethodDescriptorBase
 
 
-class NonThreadSafeMethodDescriptor(MethodDescriptorBase):
+class SimpleMethodDescriptor(MethodDescriptorBase):
 
     def __init__(self, method: Callable):
         if not isinstance(method, Callable):
@@ -22,9 +22,9 @@ class NonThreadSafeMethodDescriptor(MethodDescriptorBase):
         return self.method.__get__(self.instance, self.owner)
 
     def __get__(self, instance, owner=None):
-        self.instance = instance
-        self.owner = owner
         new_instance = self.clone()
+        new_instance.instance = instance
+        new_instance.owner = owner
 
         return new_instance
 
