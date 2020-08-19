@@ -1,4 +1,13 @@
+from pathlib import Path
+
 from setuptools import setup, find_packages
+
+package_dir = Path("./fancy_descriptors")
+readme_file = package_dir / "README.md"
+
+with readme_file.open() as fp:
+    long_description = fp.read()
+
 
 setup(
     name="fancy-descriptor",
@@ -16,5 +25,13 @@ setup(
     keywords="descriptor",
     project_urls={
         "Source Code": "https://github.com/susautw/fancy_descriptors",
-    }
+    },
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.5',
 )
