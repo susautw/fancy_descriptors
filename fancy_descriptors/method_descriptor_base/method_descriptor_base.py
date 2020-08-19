@@ -28,8 +28,3 @@ class MethodDescriptorBase(ABC):
             method_name: method for method_name, method in inspect.getmembers(instance) if isinstance(method, cls)
         }
 
-    @classmethod
-    def bind(cls, *args, **kwargs):
-        def inner(method: Callable):
-            return cls(method, *args, **kwargs)
-        return inner

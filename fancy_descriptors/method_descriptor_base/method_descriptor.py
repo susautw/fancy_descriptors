@@ -9,6 +9,7 @@ from fancy_descriptors.method_descriptor_factories import MethodDescriptorFactor
 class MethodDescriptor(MethodDescriptorBase):
     """
     The MethodDescriptor is a kind of proxy, it forwarding requests to the true instance of the descriptor.
+    All method descriptors classes should inherit this class, except classes which this proxy forwarded.
     """
     true_instance: MethodDescriptorBase
 
@@ -32,3 +33,10 @@ class MethodDescriptor(MethodDescriptorBase):
 
     def clone(self):
         return copy(self)
+
+    @classmethod
+    def bind(cls, *args, **kwargs):
+        def inner(method: Callable):
+            return cls(method, *args, **kwargs)
+
+        return inner
