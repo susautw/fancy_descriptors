@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Callable
 
-from fancy.descriptors.method_descriptor_base import MethodDescriptorBase
-from fancy.descriptors.patterns import Singleton
+from fancy.descriptor.method_descriptor_base import MethodDescriptorBase
+from fancy.descriptor.patterns import Singleton
 
 
 class MethodDescriptorFactoryBase(ABC, Singleton):

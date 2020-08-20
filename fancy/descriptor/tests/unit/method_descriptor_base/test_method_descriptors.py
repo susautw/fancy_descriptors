@@ -1,7 +1,7 @@
 from typing import List, Type
-from fancy.descriptors.method_descriptor_base import SimpleMethodDescriptor, MethodDescriptorBase, MethodDescriptor
-from fancy.descriptors.tests.unit.method_descriptor_base.fake_descriptor import FakeDescriptor
-from fancy.descriptors.tests.unit.method_descriptor_base.fake_marked import FakeMarked
+from fancy.descriptor.method_descriptor_base import SimpleMethodDescriptor, MethodDescriptorBase, MethodDescriptor
+from fancy.descriptor.tests.unit.method_descriptor_base.fake_descriptor import FakeDescriptor
+from fancy.descriptor.tests.unit.method_descriptor_base.fake_marked import FakeMarked
 
 
 class TestMethodDescriptors:

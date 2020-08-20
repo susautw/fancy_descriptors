@@ -1,5 +1,5 @@
 # Fancy Descriptors
 
-[see README here](fancy/descriptors/README.md)
+[see README here](fancy/descriptor/README.md)
 
-[see LICENSE here](fancy/descriptors/LICENSE.txt)
+[see LICENSE here](fancy/descriptor/LICENSE.txt)

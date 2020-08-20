@@ -1,5 +1,5 @@
-from fancy.descriptors.method_descriptor_base import MethodDescriptor, SimpleMethodDescriptor
-from fancy.descriptors.tests.unit.method_descriptor_base.fake_descriptor import FakeDescriptor
+from fancy.descriptor.method_descriptor_base import MethodDescriptor, SimpleMethodDescriptor
+from fancy.descriptor.tests.unit.method_descriptor_base.fake_descriptor import FakeDescriptor
 
 
 class FakeMarked:

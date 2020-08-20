@@ -1,8 +1,8 @@
 from copy import copy
 from typing import Callable
 
-from fancy.descriptors.method_descriptor_base import MethodDescriptorBase
-from fancy.descriptors.method_descriptor_factories import MethodDescriptorFactoryBase, SimpleMethodDescriptorFactory
+from fancy.descriptor.method_descriptor_base import MethodDescriptorBase
+from fancy.descriptor.method_descriptor_factories import MethodDescriptorFactoryBase, SimpleMethodDescriptorFactory
 
 
 class MethodDescriptor(MethodDescriptorBase):

@@ -1,8 +1,8 @@
 from typing import Callable
 from unittest.mock import MagicMock
 
-from fancy.descriptors import MethodDescriptor
-from fancy.descriptors.method_descriptor_factories import MethodDescriptorFactoryBase
+from fancy.descriptor import MethodDescriptor
+from fancy.descriptor.method_descriptor_factories import MethodDescriptorFactoryBase
 
 
 class FakeMethodDescriptorFactory(MethodDescriptorFactoryBase, MagicMock):
