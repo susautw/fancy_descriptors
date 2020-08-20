@@ -2,7 +2,7 @@ from pathlib import Path
 
 from setuptools import setup, find_namespace_packages
 
-package_dir = Path("./fancy/descriptors")
+package_dir = Path("./fancy/descriptor")
 readme_file = package_dir / "README.md"
 
 with readme_file.open() as fp:
@@ -11,7 +11,7 @@ with readme_file.open() as fp:
 
 setup(
     name="fancy-descriptor",
-    version="1.0.0.a1",
+    version="1.1.0.a1",
     packages=find_namespace_packages(),
     package_data={
         # If any package contains *.txt or *.rst files, include them:
@@ -33,5 +33,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.5',
+    python_requires='>=3.6',
 )
