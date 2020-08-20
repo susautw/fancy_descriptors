@@ -5,7 +5,7 @@ This package add a callable descriptor called method descriptor which can apply 
 ### a simplest example:
 ```python
 
-from fancy import descriptors as fd
+import fancy.descriptors as fd
 class MyDescriptor(fd.MethodDescriptor):
     pass
 
@@ -62,7 +62,7 @@ my_obj.method_annotated.get_value()  # returned 1
 ### Inheritance
 ```python
 
-from fancy import descriptors as fd
+import fancy.descriptors as fd
 class MyBaseDescriptor(fd.MethodDescriptor):
     pass
 
