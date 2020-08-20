@@ -1,5 +1,5 @@
-from fancy_descriptors.method_descriptor_base import SimpleMethodDescriptor
-from fancy_descriptors.method_descriptor_factories import SimpleMethodDescriptorFactory
+from fancy.descriptors.method_descriptor_base import SimpleMethodDescriptor
+from fancy.descriptors.method_descriptor_factories import SimpleMethodDescriptorFactory
 
 
 class TestMethodDescriptorFactories:

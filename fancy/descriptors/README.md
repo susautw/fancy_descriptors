@@ -4,7 +4,8 @@ This package add a callable descriptor called method descriptor which can apply 
 # Usage
 ### a simplest example:
 ```python
-import fancy_descriptors as fd
+
+from fancy import descriptors as fd
 class MyDescriptor(fd.MethodDescriptor):
     pass
 
@@ -31,7 +32,7 @@ MyDescriptor.get_marked_method(my_obj)
 
 ### with metadata
 ```python
-import fancy_descriptors as fd
+import fancy.descriptors as fd
 
 class MyDescriptor(fd.MethodDescriptor):
     def __init__(self,method, value: int, factory = None): 
@@ -60,7 +61,8 @@ my_obj.method_annotated.get_value()  # returned 1
 
 ### Inheritance
 ```python
-import fancy_descriptors as fd
+
+from fancy import descriptors as fd
 class MyBaseDescriptor(fd.MethodDescriptor):
     pass
 

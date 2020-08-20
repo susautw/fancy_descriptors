@@ -1,7 +1,7 @@
 from copy import copy
 from typing import Callable
 
-from fancy_descriptors.method_descriptor_base import MethodDescriptorBase
+from fancy.descriptors.method_descriptor_base import MethodDescriptorBase
 
 
 class SimpleMethodDescriptor(MethodDescriptorBase):

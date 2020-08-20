@@ -1,6 +1,5 @@
 import inspect
 from abc import ABC, abstractmethod
-from typing import Callable
 
 
 class MethodDescriptorBase(ABC):

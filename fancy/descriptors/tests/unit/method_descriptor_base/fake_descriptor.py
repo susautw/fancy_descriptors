@@ -1,7 +1,7 @@
 from typing import Any, Callable
 
-from fancy_descriptors.method_descriptor_base import MethodDescriptor
-from fancy_descriptors.method_descriptor_factories import MethodDescriptorFactoryBase
+from fancy.descriptors import MethodDescriptor
+from fancy.descriptors.method_descriptor_factories import MethodDescriptorFactoryBase
 
 
 class FakeDescriptor(MethodDescriptor):
