@@ -33,6 +33,9 @@ class MethodDescriptor(MethodDescriptorBase):
     def clone(self):
         return copy(self)
 
+    def get_method(self) -> Callable:
+        return self.true_instance.get_method()
+
     @classmethod
     def bind(cls, *args, **kwargs):
         def inner(method: Callable):

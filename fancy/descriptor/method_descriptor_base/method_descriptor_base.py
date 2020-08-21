@@ -1,5 +1,6 @@
 import inspect
 from abc import ABC, abstractmethod
+from typing import Callable
 
 
 class MethodDescriptorBase(ABC):
@@ -14,6 +15,10 @@ class MethodDescriptorBase(ABC):
 
     @abstractmethod
     def __get__(self, instance, owner):
+        pass
+
+    @abstractmethod
+    def get_method(self) -> Callable:
         pass
 
     @classmethod

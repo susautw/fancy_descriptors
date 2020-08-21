@@ -36,3 +36,5 @@ class SimpleMethodDescriptor(MethodDescriptorBase):
     def clone(self):
         return copy(self)
 
+    def get_method(self) -> Callable:
+        return self.method
