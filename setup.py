@@ -11,7 +11,7 @@ with readme_file.open() as fp:
 
 setup(
     name="fancy-descriptor",
-    version="1.2.0.a1",
+    version="1.2.0.a2",
     packages=find_namespace_packages(),
     package_data={
         # If any package contains *.txt or *.rst files, include them:

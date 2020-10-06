@@ -1,5 +1,5 @@
 # fancy-descriptors
-This package add a callable descriptor called method descriptor which can apply on methods.
+This package adds a callable descriptor called method descriptor which can apply to methods.
 
 # Usage
 ### a simplest example:
